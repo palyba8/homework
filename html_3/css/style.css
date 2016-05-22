@@ -1,0 +1,140 @@
+body {
+background-color: #f9f9f9;
+font-family: Arial;
+}
+
+.wrapper{
+	margin: 0px 152px;
+	padding: 46px 50px;
+background-color: #fff;	
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/*menu*/
+
+.menu li{
+	float: left;
+	padding: 0px 20px;
+}
+
+.menu li a {
+	display: block;
+	line-height: 40px;
+	text-decoration: none;	
+	font-size: 1em;
+}
+
+.menu li:first-child{
+	padding-right: 62px;
+}
+
+.menu li:nth-child(3) {
+	padding: 0px 62px;
+}
+
+/*top_menu*/
+.top_menu{
+	margin: 40px 0px;
+}
+
+.top_menu .menu{
+	background: #444343;
+    background: linear-gradient(to top, #444343, #5e5e5e);
+}
+
+.top_menu .menu li a {
+	color: #fff;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+
+.top_menu .menu .active{
+	background: #444343;
+    background: linear-gradient(to top, #2e2e2e, #4a4a4a);
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+
+/*left_menu*/
+.left_menu{
+	width: 240px;
+	float: left;
+	border: 1px solid #c8c8c8;
+}
+
+.left_menu li{
+	height: 38px;
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.left_menu li:last-child{
+	border-bottom:none;
+}
+
+.left_menu li a{
+	display: block;
+	padding: 0px 22px;
+	line-height: 38px;
+	color: #656363;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+.left_menu li.active{
+	background: #f9f9f9;
+}
+
+.left_menu li.active a{
+	padding:0px 32px;
+	color:#2c2c2c;
+}
+
+/*content*/
+.content{
+	float: right;
+	width: calc(100% - 290px);
+}
+
+.image{
+	border: 1px solid #c8c8c8;
+	text-align: center;
+	padding: 45px 90px;
+}
+
+.content p{
+	margin: 40px 25px;
+	color: #2c2c2c;
+	line-height: 22px;
+	font-size: 0.72em;
+}
+
+/*bottom_menu*/
+.bottom_menu{
+	margin: 20px 0px;
+}
+
+.bottom_menu .menu{
+	background: #e1e1e1;
+}
+
+.bottom_menu .menu li a {
+	color: #2c2c2c;
+}
+
+.bottom_menu .menu .active{
+	text-decoration: underline;
+}
+
+.bottom_menu .menu li:last-child{
+	display: block;
+	float: right;
+	line-height: 40px;
+	color: #2c2c2c;
+}
