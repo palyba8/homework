@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('HelveticaNeue.eot');
+  src: url('HelveticaNeue.woff2') format('woff2'),
+  		url('HelveticaNeue.woff') format('woff'),
+       url('HelveticaNeue.ttf') format('truetype'),
+       url('HelveticaNeue.svg#svgFontName') format('svg');;
+}
+
 body{
-	font-family: Tahoma,Arial, sans-serif;
+	font-family: 'Helvetica Neue',Arial, sans-serif;
 	font-size: 14px;
 }
 
