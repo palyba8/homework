@@ -1,0 +1,133 @@
+header{
+	height: 846px;
+}
+
+.row{
+	width: 960px;
+}
+
+.logo{
+	margin: 50px 0 0 0;
+}
+
+.menu {
+	margin: 75px 5px 180px 0;
+}
+
+.menu__link {
+	font-size: 24px;
+}
+
+.slider__inner{
+	width: 525px;
+	margin-top: 77px;
+}
+
+.slider__header{
+	font-size: 60px;
+}
+
+.slider__description{
+	font-size: 32px;
+	height: 32px;
+}
+
+.slider__text{
+	font-size: 18px;
+	line-height: 24px;
+	height: 140px;
+}
+
+.iphone{
+	top: -18px;
+    right: 70px;
+}
+
+.about{
+	width: 290px;
+	margin: 75px 0 0 0;
+}
+
+.about:nth-child(2){
+	margin: 75px 15px 0 50px;
+}
+
+.about__image{
+	margin: 10px 22px 0 0;
+}
+
+.about__text{
+	padding: 6px 0 0 0;
+    line-height: 24px;
+    height: 125px;
+	font-size: 16px;
+}
+
+.about__readmore{
+	margin: 15px 14px 0 0;
+}
+
+.blurbs__1{
+	
+	background-position: 0 0;
+}
+
+.blurbs__2{
+	background-position: 56px 0;
+}
+
+.blurbs__3{
+	background-position: 28px 0;
+}
+
+.about__inner{
+	width: 240px;
+}
+
+.about__header{
+	font-size: 30px;
+}
+
+.content{
+	padding: 97px 0 90px 0;
+}
+
+.testimonials{
+	width: 427px;
+	height:292px;
+}
+
+.testimonial__header{
+	padding: 32px 0px 11px 40px;
+	font-size: 30px;
+}
+
+.blogs{
+	width: 450px;
+}
+
+.blogs__link__768{
+	display: none;
+}
+
+.categories{
+	display: none;
+}
+
+.footer__block{
+	width: 280px;
+	height: 206px;
+}
+
+.footer__block:nth-child(2){
+    margin: 96px 60px 90px 44px;
+}
+
+.footer__header{
+	font-size: 30px;
+}
+
+.bottom-menu{
+	margin: 0;
+	font-size: 20px;
+}
