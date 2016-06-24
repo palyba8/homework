@@ -63,12 +63,12 @@ body{
 }
 
 .invent{
-background: url(../img/invent.png) no-repeat;
-width: 21px;
-height: 24px;
-display: block;
-float: left;
-margin: 6px 9px;
+	background: url(../img/invent.png) no-repeat;
+	width: 21px;
+	height: 24px;
+	display: block;
+	float: left;
+	margin: 6px 9px;
 }
 
 .profile a{
@@ -102,6 +102,7 @@ margin: 6px 9px;
 	background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
 }
 
 .login-form{

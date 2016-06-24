@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<title>homework html 5</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<title>homework html 6</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -124,8 +123,82 @@
 		<input type="submit" name="submit" value="ПОИСК...">
 		</form>
 	</aside>
-	<aside class="tire-search"></aside>
-	<aside class="wheels-search"></aside>
+	<aside class="search tire-search">
+		<header>Поиск шин</header>
+		<form action="">
+		<label class="mainlabel">Размер: </label>
+		<select name="tire_size">
+					<option value="size1">145</option>
+					<option value="size2">155</option>
+					<option value="size3">165</option>
+				</select>
+				<span>/</span>
+				<select name="tire_weight">
+	    			<option selected value=""> </option>
+					<option value="size1">55</option>
+					<option value="size2">65</option>
+					<option value="size3">75</option>
+				</select><br>
+				<label class="mainlabel">R: </label>
+		<select name="tire_radius">
+					<option value="r1">12</option>
+					<option value="r2">13</option>
+					<option value="r3">16</option>
+				</select><br>
+				<label class="mainlabel">Сезон: </label>
+					<label class="mainlabel check">
+					<input type="checkbox" name="summer">Лето</label><br>
+					<label class="mainlabel check step-left">
+					<input type="checkbox" name="winter">Зима</label><br>
+					<label class="mainlabel check step-left">
+					<input type="checkbox" name="allSeazone">Всесез</label><br>
+				<input type="submit" name="submit" value="ПОИСК...">
+		</form>
+	</aside>
+	<aside class="search wheels-search">
+		<header>Поиск дисков</header>
+		<form action="">
+		<div class="wheels_row1">
+				<label class="mainlabel">Диаметр <span>диска:</span></label>
+				<select name="wheels_diametr">
+					<option value="wd1">14</option>
+					<option value="wd2">15</option>
+					<option value="wd3">16</option>
+				</select><br>
+				<label class="mainlabel">Количество </label><br>
+				<label>крепёжных отверстий:</label>
+				<select name="wheels_bolts">
+					<option value="wb1">3</option>
+					<option value="wb2">4</option>
+					<option value="wb3">5</option>
+				</select><br>
+					<label class="mainlabel">Диаметр </label><br>
+					<label>расположения крепёжных отверстий:</label>
+				<select name="wheels_bolts_diametr">
+					<option value="wbd1">12</option>
+					<option value="wbd2">13</option>
+					<option value="wbd3">14</option>
+				</select><br>
+			</div>
+			<div class="wheels_row2">
+				<label class="mainlabel">ДЦО </label><br>
+					<label>(Диаметр центрального отверствия):</label>
+					<select name="wheels_hole">
+					<option value="wh1">12</option>
+					<option value="wh2">14</option>
+					<option value="wh3">15</option>
+				</select><br>
+				<label class="mainlabel">ЕТ </label><br>
+					<label>(вылет диска):</label>
+					<select name="wheels_hole">
+					<option value="wh1">12</option>
+					<option value="wh2">14</option>
+					<option value="wh3">15</option>
+				</select><br>
+				<input type="submit" name="submit" value="ПОИСК...">
+			</div>
+		</form>
+	</aside>
 </section>
 <main class="clearfix">
 	<section class="left-sidebar">
