@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js-09-10</title>
+	<script
+			  src="https://code.jquery.com/jquery-1.12.4.js"
+			  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+			  crossorigin="anonymous"></script>
+			  <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+					<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.jcarousel-autoscroll.min.js"></script>
+		<script type="text/javascript" src="js/jquery.color.js"></script>
+		<script type="text/javascript" src="js/fancySelect.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.selectik.min.js"></script>
+		<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+<script type="text/javascript" src="js/cusel.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/fancySelect.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/selectik.css">
+		<link rel="stylesheet" type="text/css" href="css/cusel.css">
+<script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery(".cusel").each(
+function(){
+	var w = parseInt(jQuery(this).width()),
+		scrollPanel = jQuery(this).find(".cusel-scroll-pane");
+	if(w>=scrollPanel.width())
+	{
+		jQuery(this).find(".jScrollPaneContainer").width(w);
+		scrollPanel.width(w);
+	}
+});
+	
+	var params = {
+		changedEl: "#country",
+		scrollArrows: false
+	}
+
+	cuSel(params);
+});
+</script>
+
+</head>
+<body>
+ <div class="wrapper">
+ <div class="logo-wrapper">
+ 	<div class="logo">
+ 		<h1>JS Homework</h1>
+ 		<h2>09-10</h2>
+ 	</div>
+ </div>
+
+<nav>
+	<ul class="menu">
+		<li><a href="#">Nav1</a></li>
+		<li><a href="#">Nav2</a></li>
+		<li><a href="#">Nav3</a>
+			<ul class="sub-menu">
+				<li><a href="#">Nav 3.1</a></li>
+				<li><a href="#">Nav 3.2</a></li>
+				<li><a href="#">Nav 3.3</a></li>
+				<li><a href="#">Nav 3.4</a>
+					<ul class="sub-menu">
+						<li><a href="#">Nav 3.4.1</a></li>
+						<li><a href="#">Nav 3.4.2</a>
+							<ul class="sub-menu">
+								<li><a href="#">Nav 3.4.3.1</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Nav 3.5</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Nav4</a></li>
+		<li><a href="#">Nav5</a></li>
+	</ul>
+</nav>
+
+	 	<div class="stage-wrapper">
+		 	<div class="jcarousel-wrapper">
+				<div class="jcarousel" data-jcarousel="true" data-wrap="circular">
+					<ul>	
+						<li><img src="img/dmk1.jpg" width="748" height="300" alt=""></li>
+						<li><img src="img/dmk2.jpg" width="748" height="300" alt=""></li>
+						<li><img src="img/dmk3.jpg" width="748" height="300" alt=""></li>
+						<li><img src="img/dmk4.jpg" width="748" height="300" alt=""></li>
+						<li><img src="img/dmk5.jpg" width="748" height="300" alt=""></li>
+					</ul>
+				</div>
+			    <a class="jcarousel-control-prev" data-jcarousel-control="true" data-target="-=1" href="#" >&lsaquo;</a>
+			    <a class="jcarousel-control-next" data-jcarousel-control="true" data-target="+=1" href="#" >&rsaquo;</a>
+			    <div class="jcarousel-pagination">
+			    </div>
+			</div>
+		</div>
+
+		 <form action="#">
+
+		 <h2 class="sector_header">Нестандартные select-ы</h2>
+		 		<div class="selects clearfix">
+		 			<div class="jsSelectBox" >
+		 				<label>FancySelect</label> <br>   
+		               <select class="basic">
+				            <option >Словакия</option>
+				            <option >Румыния</option>
+				            <option >Болгария</option>
+				            <option >Польша</option>
+				            <option >Германия</option>
+				            <option >Франция</option>
+				            <option >Англия</option>
+				            <option >Испания</option>
+		     	      </select>
+	        	    </div>
+	         		 <div class="jsSelectBox" >
+		 				<label>Selectik</label><br>  
+		               <select class="selectic">
+				            <option >Словакия</option>
+				            <option >Румыния</option>
+				            <option >Болгария</option>
+				            <option >Польша</option>
+				            <option >Германия</option>
+				            <option >Франция</option>
+				            <option >Англия</option>
+				            <option >Испания</option>
+		     	      </select>
+	         		</div>
+	         		<div class="jsSelectBox" >
+		 				<label>cusel</label> <br>   
+		               <select id="country" >
+				            <option selected="selected" value="1">Словакия</option>
+				            <option value="2" >Румыния</option>
+				            <option value="3" >Болгария</option>
+				            <option value="4" >Польша</option>
+				            <option value="5" >Германия</option>
+				            <option value="6" >Франция</option>
+				            <option value="7" >Англия</option>
+				            <option value="8" >Испания</option>
+		     	      </select>
+	        	    </div>
+	         	</div>
+<div class="clearfix">
+	     <h2 class="sector_header">Нестандартные чекбоксы</h2>
+    <div class="checkboxes checkBoxJS">
+	 <h3>1. Нестандартные чекбоксы с помощью jquery</h3>
+			<div class="clearfix">
+			 <label>
+			 		<span class="title">Label 1</span>
+                    <span class="niceCheck b_n">
+                        <input type="checkbox" checked="checked"/>
+                    </span>
+                    
+              </label>
+            </div>
+            <div class="clearfix">  
+			  <label>
+					 <span class="title">Label 2</span>
+                    <span class="niceCheck b_n">
+                        <input type="checkbox" />
+                    </span>
+                    
+               </label>
+            </div>
+			<div class="clearfix">
+     		   <label>
+      				<span class="title">Label 3</span>
+                    <span class="niceCheck b_n">
+                        <input type="checkbox" disabled="disabled" checked="checked"/>
+                    </span>
+                   
+               </label>
+			</div>
+   </div>
+
+   <div class="checkboxes checkBoxCSS">
+	<h3>2. Нестандартные чекбоксы с помощью css</h3>
+
+    <div><input type="checkbox" id="test-check1" checked="true" /> <label for="test-check1">Чекбокс 1:</label></div>
+ 	<div><input type="checkbox" id="test-check2" /> <label for="test-check2">Чекбокс 2:</label></div>
+ 	<div><input type="checkbox" id="test-check3" checked  disabled/> <label for="test-check3">Чекбокс 3:</label></div>
+   </div>
+
+</div>
+	   	</form>
+ </div>
+</body>
+</html>
