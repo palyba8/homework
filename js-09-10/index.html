@@ -34,7 +34,7 @@ function(){
 		scrollPanel.width(w);
 	}
 });
-	
+
 	var params = {
 		changedEl: "#country",
 		scrollArrows: false
@@ -84,7 +84,7 @@ function(){
 	 	<div class="stage-wrapper">
 		 	<div class="jcarousel-wrapper">
 				<div class="jcarousel" data-jcarousel="true" data-wrap="circular">
-					<ul>	
+					<ul>
 						<li><img src="img/dmk1.jpg" width="748" height="300" alt=""></li>
 						<li><img src="img/dmk2.jpg" width="748" height="300" alt=""></li>
 						<li><img src="img/dmk3.jpg" width="748" height="300" alt=""></li>
@@ -104,7 +104,9 @@ function(){
 		 <h2 class="sector_header">Нестандартные select-ы</h2>
 		 		<div class="selects clearfix">
 		 			<div class="jsSelectBox" >
-		 				<label>FancySelect</label> <br>   
+
+		 				<label>FancySelect</label> <br>
+							<div class="centering">
 		               <select class="basic">
 				            <option >Словакия</option>
 				            <option >Румыния</option>
@@ -116,8 +118,10 @@ function(){
 				            <option >Испания</option>
 		     	      </select>
 	        	    </div>
+								</div>
 	         		 <div class="jsSelectBox" >
-		 				<label>Selectik</label><br>  
+		 				<label>Selectik</label><br>
+							<div class="centering">
 		               <select class="selectic">
 				            <option >Словакия</option>
 				            <option >Румыния</option>
@@ -129,8 +133,10 @@ function(){
 				            <option >Испания</option>
 		     	      </select>
 	         		</div>
+							</div>
 	         		<div class="jsSelectBox" >
-		 				<label>cusel</label> <br>   
+		 				<label>cusel</label> <br>
+						<div class="centering">
 		               <select id="country" >
 				            <option selected="selected" value="1">Словакия</option>
 				            <option value="2" >Румыния</option>
@@ -141,28 +147,30 @@ function(){
 				            <option value="7" >Англия</option>
 				            <option value="8" >Испания</option>
 		     	      </select>
+							</div>
 	        	    </div>
 	         	</div>
 <div class="clearfix">
 	     <h2 class="sector_header">Нестандартные чекбоксы</h2>
     <div class="checkboxes checkBoxJS">
 	 <h3>1. Нестандартные чекбоксы с помощью jquery</h3>
+	 <div class="centering">
 			<div class="clearfix">
 			 <label>
 			 		<span class="title">Label 1</span>
                     <span class="niceCheck b_n">
                         <input type="checkbox" checked="checked"/>
                     </span>
-                    
+
               </label>
             </div>
-            <div class="clearfix">  
+            <div class="clearfix">
 			  <label>
 					 <span class="title">Label 2</span>
                     <span class="niceCheck b_n">
                         <input type="checkbox" />
                     </span>
-                    
+
                </label>
             </div>
 			<div class="clearfix">
@@ -171,19 +179,20 @@ function(){
                     <span class="niceCheck b_n">
                         <input type="checkbox" disabled="disabled" checked="checked"/>
                     </span>
-                   
+
                </label>
 			</div>
+		</div>
    </div>
 
    <div class="checkboxes checkBoxCSS">
 	<h3>2. Нестандартные чекбоксы с помощью css</h3>
-
+	<div class="centering">
     <div><input type="checkbox" id="test-check1" checked="true" /> <label for="test-check1">Чекбокс 1:</label></div>
  	<div><input type="checkbox" id="test-check2" /> <label for="test-check2">Чекбокс 2:</label></div>
  	<div><input type="checkbox" id="test-check3" checked  disabled/> <label for="test-check3">Чекбокс 3:</label></div>
    </div>
-
+ </div>
 </div>
 	   	</form>
  </div>

@@ -9,11 +9,11 @@ e.preventDefault();
 
 
 $ul.on('click',function() {
-	if ( !$(this).hasClass('active') ){ 
+	if ( !$(this).hasClass('active') ){
 		var $id = $(this).find('a').attr('href');
 		$(this).addClass('active');
 		$(this).siblings("li").removeClass("active");
-		$($id).siblings("div").removeClass('in active');	
+		$($id).siblings("div").removeClass('in active');
 		$($id).addClass("in active");
 	}
 });

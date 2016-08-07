@@ -9,6 +9,10 @@
 	background: linear-gradient(to top, #0B3162, #184F96);
 }
 
+#stop {
+	display: none;
+}
+
 .changeBg{
 	float: right;
 	margin-right: 40px;

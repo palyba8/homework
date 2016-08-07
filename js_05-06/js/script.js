@@ -3,6 +3,7 @@ var hour = document.querySelector('#hour'),
 	second = document.querySelector('#second'),
 	msecond = document.querySelector('#msecond'),
 	startButton = document.querySelector('#start'),
+	stopButton = document.querySelector('#stop'),
 	clearButton = document.querySelector('#reset'),
 	splitButton = document.querySelector('#split'),
 	results = document.querySelector('.results'),
@@ -11,33 +12,53 @@ var hour = document.querySelector('#hour'),
 	startTime;
 
 startButton.addEventListener('click',startTimer);
+stopButton.addEventListener('click',stopTimer);
 clearButton.addEventListener('click',reset);
 background.addEventListener('click',changeBg);
 
- function startTimer() {
-	if (startButton.innerHTML==='Start') {
-		start();
-		startButton.innerHTML = 'Stop';
-		startButton.className = 'btn btn-danger';
-		splitButton.addEventListener('click',split);
-		splitButton.className = 'btn btn-warning';
-	} else {
-		pause();
-		split('stop');
-		startButton.innerHTML = 'Start';
-		startButton.className = 'btn btn-success';
-		splitButton.className = 'btn btn-default';
-		splitButton.removeEventListener('click',split);
-	}
+// новая версия
+
+function startTimer() {
+	start();
+	splitButton.addEventListener('click',split);
+
 }
+
+function stopTimer() {
+	pause();
+	split('stop');
+	splitButton.removeEventListener('click',split);
+}
+// старая версия
+
+ // function startTimer() {
+ // if (startButton.innerHTML==='Start') {
+ // 	start();
+ // 	startButton.innerHTML = 'Stop';
+ // 	startButton.className = 'btn btn-danger';
+ // 	splitButton.addEventListener('click',split);
+ // 	splitButton.className = 'btn btn-warning';
+ // } else {
+ // 	pause();
+ // 	split('stop');
+ // 	startButton.innerHTML = 'Start';
+ // 	startButton.className = 'btn btn-success';
+ // 	splitButton.className = 'btn btn-default';
+ // 	splitButton.removeEventListener('click',split);
+ // }
+
+
+
 function split(event) {
 	var text
 	var res = document.createElement('p');
 	var target = event.target;
  	(target) ? text= target.id : text = event;
-	res.innerHTML =text+ ': ' + hour.innerHTML + ' : ' + minute.innerHTML + ' : ' + second.innerHTML  + ' . ' + msecond.innerHTML;
+	text = text.concat(text, ': ',hour.innerHTML,' : ',minute.innerHTML,
+' : ',second.innerHTML,' . ', msecond.innerHTML);
+	res.innerHTML =text;
 	results.appendChild(res);
-	
+
 }
 
 function reset() {
@@ -52,11 +73,17 @@ function reset() {
 }
 
 function start() {
+	startButton.style.display = "none";
+	stopButton.style.display = "inline-block";
+	splitButton.className = 'btn btn-warning';
 	startTime = new Date();
 	timer = setInterval(tick,1);
 }
 
 function pause() {
+	splitButton.className = 'btn btn-default';
+	stopButton.style.display = "none";
+	startButton.style.display = "inline-block";
 	clearInterval(timer);
 	startButton.innerHTML = 'Start';
 }
@@ -80,7 +107,7 @@ function tick() {
 				}
 			}
 		}
-	}	
+	}
 	if ( t < 10 ) {
 		msecond.innerHTML ='00' +t;
 	} else if ( t < 100 ) {
