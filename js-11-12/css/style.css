@@ -1,0 +1,153 @@
+body {
+    background: #F0EFE7;
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4E443C;
+}
+
+.clearfix:after{
+    content: ""; 
+    display: block;
+    clear: both;
+}
+
+
+/*HEADER*/
+
+.logo-wrapper h1{
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: -3px;
+    color: #F14E32;
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+.logo-wrapper h2 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #9A9994;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    max-width: 300px;
+    border: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #4E443C;
+    position: relative;
+}
+
+.carousel{
+    text-align: center;
+    height: 300px;
+    background: linear-gradient(to top,#000,#333);display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f9;
+}
+
+
+.carousel-body{
+
+    display: inline-block;
+}
+
+.carousel-list {    
+    list-style: none;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-element img {
+    max-width: 100px;
+}
+
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+}
+
+.carousel-hider {
+    width: 600px;
+    overflow: hidden;
+}
+
+.carousel-hider {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+ 
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-element img {
+    max-width: 100px;
+}
+ 
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+}
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    border: 1px solid #624684;
+    background-color: #481F69;
+    padding: 5px;
+    margin-top: 50px;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    background-color: #624684;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+.profile-wrapper {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.profile-wrapper p,
+.profile-wrapper li {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.profile_img{
+    border-radius: 100%;
+    height: 200px;
+}

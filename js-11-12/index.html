@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js-11-12</title>
+			<script
+			  src="https://code.jquery.com/jquery-1.12.4.js"
+			  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+			  crossorigin="anonymous">
+		    </script>
+				 <script type="text/javascript" src="js/jquery.carousel.js"></script>
+			 	 <script type="text/javascript" src="js/template.js"></script>
+				 <script type="text/javascript" src="js/lodash.js"></script>
+				 <script type="text/javascript" src="js/script.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+ <div class="wrapper">
+ <div class="logo-wrapper">
+ 	<div class="logo">
+ 		<h1>JS Homework</h1>
+ 		<h2>11-12</h2>
+ 	</div>
+ </div>
+ <div class="carousel">
+	 <div class="carousel-body">
+		 <div class="carousel-arrow-left"><span>Влево</span></div>
+		 <div class="carousel-hider">
+			<ul class="carousel-list">
+			    <li class="carousel-element"><img src="./img/dmk1.jpg"><p>Описание 1</p></li>
+			    <li class="carousel-element"><img src="./img/dmk2.jpg"><p>Описание 2</p></li>
+			    <li class="carousel-element"><img src="./img/dmk3.jpg"><p>Описание 3</p></li>
+			    <li class="carousel-element"><img src="./img/dmk4.jpg"><p>Описание 4</p></li>
+			    <li class="carousel-element"><img src="./img/dmk5.jpg"><p>Описание 5</p></li>
+			    <li class="carousel-element"><img src="./img/dmk1.jpg"><p>Описание 6</p></li>
+			    <li class="carousel-element"><img src="./img/dmk2.jpg"><p>Описание 7</p></li>
+			    <li class="carousel-element"><img src="./img/dmk3.jpg"><p>Описание 8</p></li>
+			    <li class="carousel-element"><img src="./img/dmk4.jpg"><p>Описание 9</p></li>
+			    <li class="carousel-element"><img src="./img/dmk5.jpg"><p>Описание 10</p></li>
+			  </ul>
+		</div>
+		<div class="carousel-arrow-right"><span>Вправо</span></div>
+	</div>
+</div>
+
+<script type="text/template" id="profile">
+<div class="profile-wrapper">
+		<div class="center">
+			<h1><%= name %></h1>
+				<img class="profile_img" src="<%= pictureURL%>">
+		</div>
+		<p><%= workplace %></p>
+		<hr>
+	<br>
+	<p>Хочу учить фронтенд, потому что:</p>
+	<br>
+	<ul>
+		<%= learning %>
+	</ul>
+		<hr>
+	<br>
+	<p>Мой контактный телефон</p>
+	<p><%= phoneNumber %></p>
+	<br>
+	<p>Мой профиль вконтакте</p>
+	<p><a href="<%= vkProfile %>">vk.com</a></p>
+		<hr>
+	<br>
+	<p>Мой фидбек:</p>
+	<p><%= feedback %></p>
+</div>
+</script>
+ </div>
+</body>
+</html>
