@@ -1,0 +1,264 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:400,500';
+@import 'https://fonts.googleapis.com/css?family=Ubuntu+Condensed';
+body {
+  font-family: 'Ubuntu', sans-serif; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    text-decoration: none; }
+
+.clearfix:afrer {
+  content: '';
+  clear: both;
+  display: block; }
+
+.logo {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  width: 280px;
+  float: left;
+  margin-top: 38px; }
+  .logo img {
+    float: left;
+    margin-right: 5px; }
+  .logo h1 {
+    float: left;
+    margin: -7px 0 0 0;
+    padding: 0;
+    font-size: 30px;
+    display: block; }
+  .logo h3 {
+    float: left;
+    margin: -12px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 4.5px; }
+
+.social_wrapper {
+  margin-top: 50px;
+  float: right; }
+  .social_wrapper li {
+    float: left; }
+  .social_wrapper a {
+    font-size: 16px;
+    padding-right: 20px; }
+
+.top_menu {
+  margin: 36px 0; }
+  .top_menu .top_menu_wrapper {
+    position: relative;
+    overflow: hidden; }
+    .top_menu .top_menu_wrapper nav {
+      margin-left: -15px; }
+    .top_menu .top_menu_wrapper ul, .top_menu .top_menu_wrapper li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+    .top_menu .top_menu_wrapper li {
+      float: left;
+      border-right: 1px solid #181a1d;
+      height: 56px; }
+    .top_menu .top_menu_wrapper a {
+      text-transform: uppercase;
+      padding: 0 35px;
+      display: inline-block;
+      line-height: 56px; }
+
+.top_search {
+  margin: 10px 0; }
+  .top_search input {
+    display: inline-block;
+    width: 225px;
+    line-height: 34px;
+    border: none;
+    padding: 0 15px;
+    font-size: 12px; }
+  .top_search button {
+    border: none;
+    line-height: 26px; }
+
+.s_slider img {
+  height: 473px;
+  width: 100%; }
+
+.s_slider h2 {
+  position: absolute;
+  bottom: 36px;
+  display: inline-block;
+  width: 100px;
+  padding: 20px;
+  line-height: 40px;
+  left: 36px; }
+
+.s_slider a {
+  text-transform: uppercase;
+  font-size: 54px; }
+
+.s_features {
+  margin-bottom: 87px; }
+  .s_features .features_count {
+    width: 35%;
+    float: left;
+    font-size: 90px;
+    top: -30px;
+    position: relative; }
+  .s_features .features_text {
+    width: 65%;
+    display: inline-block; }
+    .s_features .features_text h2 {
+      font-size: 20px; }
+    .s_features .features_text p {
+      font-size: 13px;
+      font-family: Arial, sans-serif;
+      height: 55px;
+      overflow: hidden; }
+    .s_features .features_text a {
+      font-size: 13px;
+      font-weight: 500; }
+    .s_features .features_text .fa {
+      font-size: 35px; }
+    .s_features .features_text .fa-sliders {
+      transform: rotate(90deg); }
+    .s_features .features_text .fa-truck {
+      transform: scaleX(-1); }
+
+.s_services {
+  padding: 50px 0; }
+  .s_services h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+    padding: 0; }
+  .s_services li {
+    float: left; }
+  .s_services span {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin: 0 auto; }
+    .s_services span .services_active {
+      display: none;
+      position: absolute;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      background: rgba(36, 140, 236, 0.9); }
+      .s_services span .services_active .services_hor,
+      .s_services span .services_active .services_ver {
+        width: 30px;
+        height: 3px;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-left: -15px;
+        background-color: #fff; }
+      .s_services span .services_active .services_ver {
+        transform: rotate(90deg);
+        margin-top: -2px; }
+  .s_services img {
+    transform: translateX(-20%); }
+
+figure {
+  margin: 9px;
+  position: relative; }
+  figure p {
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: center; }
+
+.s_info {
+  padding: 65px 0; }
+  .s_info h2 {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0;
+    margin-bottom: 50px; }
+  .s_info .info_article {
+    margin-bottom: 30px; }
+  .s_info h3 {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 0; }
+  .s_info figure {
+    width: 160px;
+    float: left; }
+  .s_info .article_details {
+    margin-bottom: 30px; }
+    .s_info .article_details span {
+      margin-left: 10px; }
+  .s_info .article_img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    display: block;
+    position: relative; }
+  .s_info figcaption {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    text-align: center; }
+    .s_info figcaption .month,
+    .s_info figcaption .day {
+      padding: 5px;
+      display: block;
+      font-size: 15px; }
+  .s_info .accordion .ui-accordion-header {
+    padding: 0px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 40px; }
+  .s_info .accordion .ui-accordion-header:before {
+    content: '\02795';
+    font-size: 10px;
+    float: left;
+    padding: 0 15px;
+    margin-right: 15px;
+    font-weight: 300; }
+  .s_info .accordion .ui-accordion-header[aria-expanded="true"]:before {
+    content: "\2796"; }
+  .s_info .accordion .ui-accordion-content {
+    margin: 35px 0 40px 40px; }
+
+.s_logos {
+  margin: 80px 0; }
+
+.s_bottom_links {
+  padding: 60px 0 75px 0; }
+  .s_bottom_links h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-bottom: 30px; }
+  .s_bottom_links li {
+    border-bottom: 1px solid #393c40;
+    line-height: 36px; }
+  .s_bottom_links li:last-child {
+    border: none; }
+  .s_bottom_links a {
+    font-family: Arial, sans-serif;
+    font-size: 13px; }
+
+footer {
+  padding: 25px 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px; }
+  footer li {
+    float: left;
+    padding-left: 30px; }
+    footer li .fa {
+      padding-right: 5px;
+      font-size: 15px; }
+  footer li:last-child {
+    float: right; }

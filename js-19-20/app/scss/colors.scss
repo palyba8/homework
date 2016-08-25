@@ -1,0 +1,160 @@
+$main_color: #333;
+$light_grey: #ccc;
+$top_menu_color: #2a2d32;
+$active: #248cec;
+$hover: #f4b60d;
+$medium_grey: #2a2b2e;
+$footer_bg: #35383c;
+$footer_text: #5d6063;
+
+body {
+	background-color: #fff;
+}
+
+.logo a {
+	color: $main_color;
+}
+
+.social_wrapper a {
+	color: $light_grey;
+	&:hover {
+		color: $active;
+	}
+}
+
+.top_menu_wrapper {
+	background-color: $top_menu_color;
+	a {
+		color: #fff;
+		&:active {
+			background-color: $active;
+		}
+		&:hover {
+			color: $hover;
+		}
+	}
+}
+
+.top_search{
+	background-color: $footer_bg;
+	border: 1px solid #181a1d;
+	&.active {
+		border: 1px solid $active;
+	}
+	input {
+		background-color: $footer_bg;
+		color: $footer_text;
+	}
+	button{
+		background-color: $footer_bg;
+		color: $footer_text;
+	}
+}
+
+.s_slider {
+	a {
+		color: #fff;
+		span {
+			color: $hover;
+		}
+	}
+}
+
+.s_features {
+	.features_count {
+		color: #e9e9e9;
+	}
+	.features_text {
+		.fa {
+			color: $hover;
+		}
+		h2 {
+			color: $medium_grey;
+		}
+		p {
+			color: #8a8a8a;
+		}
+		a {
+			color: $medium_grey;
+			&:hover {
+				color: $active;
+			}
+		}
+	}
+}
+
+.s_services {
+	background-color: $top_menu_color;
+	color: #fff;
+	a {
+		color: #fff;
+		&:hover {
+			color: $hover;		
+		}
+	}
+}
+
+.s_info {
+	background-color: #f7f7f7;
+	.info_article {
+			color: #8a8a8a;
+		}
+	a {
+		color: $active;
+	}
+	h3 a{
+		color: $top_menu_color;
+		&:hover {
+			color: $active;
+		}
+	}
+	.month {
+		background-color: $active;
+		color: #fff;
+	}
+	.day{
+		background-color: $hover;
+		color: $medium_grey;
+	}
+	.accordion {
+		.ui-accordion-header {
+			border: 1px solid #e8e8e8;
+			background-color: #fff;
+			cursor: pointer;
+			margin: 5px 0;
+		}
+			.ui-accordion-header:before {
+				border-right:1px solid #e8e8e8;
+			}
+		.ui-accordion-header[aria-expanded="true"] {
+			background-color: $hover;
+			border: none;
+			color: #fff;
+		}
+		.ui-accordion-header[aria-expanded="true"]:before {
+			border-right:1px solid #fff;
+		}
+		.ui-accordion-content {
+			color: #8a8a8a;
+		}
+	}
+}
+
+.s_bottom_links {
+	background-color: $top_menu_color;
+	color: $footer_text;
+	h2 {
+		color: #fff;
+	}
+	a {
+		color: $footer_text;
+		&:hover {
+			color: $active;
+		}
+	}
+}
+
+footer {
+	background-color: $footer_bg;
+	color: $footer_text;
+}
